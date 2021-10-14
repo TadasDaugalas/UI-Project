@@ -15,5 +15,31 @@ src: url("../fonts/Anton-Regular.ttf");
 .border-pills-right {
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
-    border: black;
+    border: 1px solid #ced4da;
+}
+.image-size{
+    width: 200px;
+    height: 200px;
+}
+.text-elipsis {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.serv ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.serv ul li {
+    list-style: none;
+    flex: 0 0 27%;
+    margin: 5px;
+}
+.category-conteiner{
+    width: auto;
+    height: auto;
 }

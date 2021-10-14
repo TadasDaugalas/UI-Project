@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
 </head>
@@ -36,14 +38,14 @@
                                                                               src="img/flags/spain.png">Spain</a></li>
                         </ul>
                     </div>
-                        <div class="d-flex">
+                    <div class="d-flex">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                             <option selected>USD</option>
                             <option value="1">GPB</option>
                             <option value="2">EURO</option>
                             <option value="3">JPN</option>
                         </select>
-                        </div>
+                    </div>
 
                     <div class="m-3"><i class="fas fa-phone ms-2"></i> +1354942165</div>
                     <div class="navbar-nav ms-auto">
@@ -62,11 +64,12 @@
     <div class="container">
         <div class="row align-items-start my-2">
             <div class="col-2 title fs-3 ">PLACEHOLDER</div>
-            <div class="col-7 rounded-pill">
+            <div class="col-7">
                 <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    <input id="searchText" type="text" class="form-control" aria-label="Text input with segmented dropdown button">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        <button class="btn dropdown-toggle ms-1" style="border: 1px solid #ced4da;" type="button"
+                                id="dropdownMenuButton3"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             All Categories
                         </button>
@@ -76,7 +79,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                    <button class="btn-outline-secondary border-pills-right"><i class="fas fa-search"></i></button>
+                    <button id="search" class="btn border-pills-right"><i class="fas fa-search"></i></button>
                 </div>
             </div>
             <div class="col-3 align-items-end">
@@ -95,9 +98,17 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="serv d-flex flex-row">
+          <ul>
+          </ul>
+        </div>
+    </div>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/apiJs.js"></script>
 </body>
 </html>

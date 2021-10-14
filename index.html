@@ -21,15 +21,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="dropdown">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected><img class="icons-img" src="img/flags/english.png">English</option>
-                            <option value="1"><img class="icons-img"
-                                                   src="img/flags/lithuania.png">Lithuanian</a></option>
-                            <option value="2"><img class="icons-img"
-                                                   src="img/flags/lithuania.png">Lithuanian</a></option>
-                            <option value="3"><img class="icons-img"
-                                                   src="img/flags/spain.png">Spain</a></option>
-                        </select>
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="icons-img" src="img/flags/english.png">English
@@ -44,16 +35,16 @@
                             <li><a class="dropdown-item d-flex" href="#"><img class="icons-img"
                                                                               src="img/flags/spain.png">Spain</a></li>
                         </ul>
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            USD
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">EUR</a></li>
-                            <li><a class="dropdown-item" href="#">GBP</a></li>
-                            <li><a class="dropdown-item" href="#">JPY</a></li>
-                        </ul>
                     </div>
+                        <div class="d-flex">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>USD</option>
+                            <option value="1">GPB</option>
+                            <option value="2">EURO</option>
+                            <option value="3">JPN</option>
+                        </select>
+                        </div>
+
                     <div class="m-3"><i class="fas fa-phone ms-2"></i> +1354942165</div>
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" href="#"><i class="far fa-user me-2"></i>My account</a>
@@ -85,7 +76,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                    <button class="btn-outline-secondary"><i class="fas fa-search"></i></button>
+                    <button class="btn-outline-secondary border-pills-right"><i class="fas fa-search"></i></button>
                 </div>
             </div>
             <div class="col-3 align-items-end">

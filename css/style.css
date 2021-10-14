@@ -12,3 +12,8 @@ src: url("../fonts/Anton-Regular.ttf");
 .title {
     font-family: "Anton",sans-serif;
 }
+.border-pills-right {
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border: black;
+}

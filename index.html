@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container paddingleft0">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,9 +23,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn dropdown-toggle paddingleft0" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="icons-img" src="img/flags/english.png">English
+                            <img class="icons-img p" src="img/flags/english.png">English
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item d-flex" href="#"><img class="icons-img"
@@ -66,7 +66,8 @@
             <div class="col-2 title fs-3 ">PLACEHOLDER</div>
             <div class="col-7">
                 <div class="input-group">
-                    <input id="searchText" type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    <input id="searchText" type="text" class="form-control"
+                           aria-label="Text input with segmented dropdown button">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle ms-1" style="border: 1px solid #ced4da;" type="button"
                                 id="dropdownMenuButton3"
@@ -88,20 +89,74 @@
                     <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
     99+
     <span class="visually-hidden">unread messages</span>
-                        <button type="button" class="btn position-relative">
+                           </span>
+                </button>
+
+                <button type="button" class="btn position-relative">
                     <i class="fas fa-shopping-bag"></i>
                     <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
     99+
     <span class="visually-hidden">unread messages</span>
   </span>
+
                 </button>
             </div>
         </div>
     </div>
+    <div class="container paddingleft0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dropdownAllCategories" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dropdownAllCategories">
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownAllCategoriesMenu"
+                                data-bs-toggle="dropdown" aria-expanded="false">ALL CATERGORIE'S
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownHomeMenu"
+                                data-bs-toggle="dropdown" aria-expanded="false">Home
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownPagesMenu"
+                                data-bs-toggle="dropdown" aria-expanded="false">PAGE'S
+                        </button>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMegaMenu"
+                                data-bs-toggle="dropdown" aria-expanded="false">MEGA MENU
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownBlogMenu"
+                                data-bs-toggle="dropdown" aria-expanded="false">BLOG
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownContatct"
+                                data-bs-toggle="dropdown" aria-expanded="false">CONTACT
+                        </button>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <button type="button" style="border: 1px solid #ced4da;" class="btn rounded-pill">Get Your
+                            Coupon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
     <div class="container">
         <div class="serv d-flex flex-row">
-          <ul>
-          </ul>
+            <ul>
+            </ul>
         </div>
     </div>
 </main>

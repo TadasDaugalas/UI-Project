@@ -9,10 +9,7 @@ $(function () {
 
     function successHandelr(response) {
         products = response;
-        let search1="";
-        let fillterArray1 = products.filter(p => p.title.includes(search1));
-        fillTable(fillterArray1);
-
+        fillTable(response);
     }
 
     function errorHandler(responese) {
@@ -35,7 +32,7 @@ $(function () {
                     '<div class="card align-items-center" style="width:auto;">'+
                         '<img src="'+item.image+'" class="card-img image-size"'+
                              'alt="...">'+
-                            '<div class="card-body">'+
+                            '<div class="card-body w-100">'+
                                 '<h5 class="card-title text-elipsis">'+item.title+'</h5>'+
                                 '<p class="card-text">'+item.rating.rate+'</p>'+
                                 '<p class="card-text">'+item.price+'</p>'+

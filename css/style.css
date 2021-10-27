@@ -36,10 +36,16 @@ src: url("../fonts/Anton-Regular.ttf");
 
 .serv ul li {
     list-style: none;
-    flex: 0 0 27%;
-    margin: 5px;
+    flex: 0 0 33%;
 }
 .category-conteiner{
     width: auto;
     height: auto;
+}
+.blacknav {
+    height: 50px;
+    width: 200px;
+}
+.paddingleft0{
+    padding-left: 0px;
 }

@@ -45,15 +45,15 @@ $(function () {
                              'alt="...">'+
                             '<div class="card-body w-100">'+
                                 '<h5 class="card-title text-elipsis">'+item.title+'</h5>'+
-                                '<span class="stars">'+item.rating.rate+'</span>'+
-                                '<p class="card-text">'+"$"+item.price+'</p>'+
+                                '<span class="card-text fs-5">'+"Ratio:"+item.rating.rate+'</span>'+
+                                '<p class="card-text fs-5">'+"$"+item.price+'</p>'+
                             '</div>'+
                     '</div>'+
                 '</li>'
             });
             $(' ul').html(rows);
         }else {
-
+        alert("Rezults not found")
         }
     }
     $(function() {

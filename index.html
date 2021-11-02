@@ -27,7 +27,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="icons-img p" src="img/flags/english.png">English
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <span class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item d-flex" href="#"><img class="icons-img"
                                                                               src="img/flags/lithuania.png">Lithuanian</a>
                             </li>
@@ -36,7 +36,7 @@
                             </li>
                             <li><a class="dropdown-item d-flex" href="#"><img class="icons-img"
                                                                               src="img/flags/spain.png">Spain</a></li>
-                        </ul>
+                        </span>
                     </div>
                     <div class="d-flex">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
@@ -61,24 +61,21 @@
     </div>
 </header>
 <main>
-    <div class="container">
+    <div class="container d-none d-sm-block">
         <div class="row align-items-start my-2">
             <div class="col-2 title fs-3 ">PLACEHOLDER</div>
             <div class="col-7">
                 <div class="input-group">
                     <input id="searchText" type="text" class="form-control"
                            aria-label="Text input with segmented dropdown button">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle ms-1" style="border: 1px solid #ced4da;" type="button"
-                                id="dropdownMenuButton3"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            All Categories
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <div class="d-flex">
+                        <select id="selectCat" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>All Category</option>
+                            <option value="men's clothing">men's clothing</option>
+                            <option value="jewelery">jewelery</option>
+                            <option value="electronics">electronics</option>
+                            <option value="women's clothing">women's clothing</option>
+                        </select>
                     </div>
                     <button id="search" class="btn border-pills-right"><i class="fas fa-search"></i></button>
                 </div>
@@ -86,16 +83,16 @@
             <div class="col-3 align-items-end">
                 <button type="button" class="btn position-relative">
                     <i class="far fa-heart"></i>
-                    <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
+                    <span  class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
+0
     <span class="visually-hidden">unread messages</span>
                            </span>
                 </button>
 
-                <button type="button" class="btn position-relative">
+                <button  type="button" class="btn position-relative">
                     <i class="fas fa-shopping-bag"></i>
-                    <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
+                    <span id="display" class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">
+   0
     <span class="visually-hidden">unread messages</span>
   </span>
 
@@ -113,9 +110,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="dropdownAllCategories">
                     <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownAllCategoriesMenu"
-                                data-bs-toggle="dropdown" aria-expanded="false">ALL CATERGORIE'S
-                        </button>
+                            <select id="selectCatBlack" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>All Category</option>
+                                <option value="men's clothing">men's clothing</option>
+                                <option value="jewelery">jewelery</option>
+                                <option value="electronics">electronics</option>
+                                <option value="women's clothing">women's clothing</option>
+                            </select>
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown-toggle" type="button" id="dropdownHomeMenu"

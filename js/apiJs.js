@@ -52,9 +52,10 @@ $(function () {
         }
     })
     let counterVal = 0;
-    function incrementClick() {
-        updateDisplay(++counterVal);
-    }
+    $(document).on('click', '#buyButton', function(){
+        counterVal+=1;
+        updateDisplay(counterVal);
+    });
     function updateDisplay(val) {
         document.getElementById("display").innerHTML = val;
     }
@@ -81,7 +82,7 @@ $(function () {
                     '<h5 class="card-title text-elipsis">' + item.title + '</h5>' +
                     '<span class="stars mb-1 card-text fs-5">' + "Ratio:" + item.rating.rate + '</span>' +
                     '<p class="card-text fs-5">' + "$" + item.price +
-                    ' <button id="buyButton" type="button" onclick="incrementClick()" class="btn">\n' +
+                    ' <button id="buyButton" type="button" class="btn">\n' +
                     '                    <i class="fas fa-shopping-bag"></i>' + '</p>' +
                     '</div>' +
                     '</div>' +

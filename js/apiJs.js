@@ -59,10 +59,10 @@ $(function () {
     function updateDisplay(val) {
         document.getElementById("display").innerHTML = val;
     }
-    $(document).ready(function(){
-        $("#gridBtn").click(function(){
+    $(document).on('click', '#gridBtn', function(){
+
             $("ul").removeClass("serv ul");
-        });
+
     });
     $(document).ready(function(){
         $("#hamburgerbtn").click(function(){
@@ -75,7 +75,7 @@ $(function () {
 
             array.forEach(function (item) {
                 rows += '<li>' +
-                    '<div class="card align-items-center" style="width:auto;">' +
+                    '<div class="card m-1 align-items-center" style="width:auto;">' +
                     '<img src="' + item.image + '" class="card-img image-size"' +
                     'alt="...">' +
                     '<div class="card-body w-100">' +

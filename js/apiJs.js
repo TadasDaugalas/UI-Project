@@ -52,18 +52,24 @@ $(function () {
         }
     })
     let counterVal = 0;
-
     function incrementClick() {
         updateDisplay(++counterVal);
     }
     function updateDisplay(val) {
         document.getElementById("display").innerHTML = val;
     }
-
-
+    $(document).ready(function(){
+        $("#gridBtn").click(function(){
+            $("ul").removeClass("serv ul");
+        });
+    });
+    $(document).ready(function(){
+        $("#hamburgerbtn").click(function(){
+            $("ul").addClass("serv ul");
+        });
+    });
     function fillTable(array) {
         if (array.length > 0) {
-            $('#serv').removeClass('invisible');
             let rows = '';
 
             array.forEach(function (item) {
